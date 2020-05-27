@@ -1,0 +1,16 @@
+title: web design
+description: 'dashboard similar to Trello-like app '
+template:
+  repo: web-design-template
+  name: web-design
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
